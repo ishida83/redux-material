@@ -5,6 +5,7 @@ var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -57,10 +58,27 @@ module.exports = {
         new OpenBrowserPlugin({
             url: 'http://localhost:8080'
         }),
+        new CopyWebpackPlugin([             
+            // { from: './node_modules/material-design-icons/iconfont/file.txt', to: './font' },            
+            { from: './node_modules/material-design-icons/iconfont', to: './font' }            
+        ], {
+            ignore: [
+                // Doesn't copy any files with a txt extension     
+                '*.txt',
+                
+                // Doesn't copy any file, even if they start with a dot 
+                { glob: '**/*', dot: true }
+            ],
+ 
+            // By default, we only copy modified files during 
+            // a watch or webpack-dev-server build. Setting this 
+            // to `true` copies all files. 
+            copyUnmodified: true
+        }),
         new HtmlWebpackPlugin({
-            title: 'upm',
+            title: 'Rule World',
             description: '',
-            username: 'yzhang4',
+            username: 'Rule World, webmaster@rule.world',
             filename: 'index.html',
             inject: 'body',
             template: 'index.html_vm',

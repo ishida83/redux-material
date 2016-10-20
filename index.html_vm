@@ -1,16 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ⚡>
     <head>
         <title><%= htmlWebpackPlugin.options.title %></title>
         <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no, minimal-ui"  />
         <meta name="renderer" content="webkit"/>
         <meta http-equiv="Cache-Control" content="no-siteapp" />
         <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
         <meta name="author" content="<%= htmlWebpackPlugin.options.username %>">
 
         <% if (htmlWebpackPlugin.options.pushState) { %><base href="/"><% } %>
+        
+        
+        <link rel="shortcut icon" type="image/png" href="/favicon.ico">
+        <meta http-equiv="theme-color" content="#4DA5F4" />
+        <meta name="theme-color" content="#9c27b0" />                   
+        <meta name="keywords" content=""/>              
+        <meta name="robots" content="index,follow"/>	
+        
+        <meta name="google-site-verification" content="w5ZXD3n6obLhNYPVwOBRvaThH25cr1EVVZCd-KiYl8k" />
+        
+        <meta name="format-detection" content="telphone=no, email=no"/>        
+        <meta name="HandheldFriendly" content="true">
+        <meta name="MobileOptimized" content="320">
+        <meta name="full-screen" content="yes">
+        <meta name="x5-fullscreen" content="true">
+        <meta name="x5-page-mode" content="app">
+        <meta name="browsermode" content="application">        
+    
+        <meta name="google" content="notranslate" />
+        
+        <meta name="apple-mobile-web-app-title" content="Rule World">
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-itunes-app" content="app-id=7D7AG37HGC, affiliate-data=myAffiliateData, app-argument=myURL">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
+        <link rel="apple-touch-icon-precomposed" href="/img/rule-logo80.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/rule-logo120.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/rule-logo120.png"/>
+        <link rel="apple-touch-startup-image" sizes="768x1004" href="/img/rule-logo450x300.png"/>
+        <link rel="apple-touch-startup-image" sizes="1536x2008" href="/img/rule-logo450x300.png"/>
+        <link rel="apple-touch-startup-image" sizes="1024x748" href="/img/rule-logo450x300.png"/>
+        <link rel="apple-touch-startup-image" sizes="2048x1496" href="/img/rule-logo450x300.png"/>
+        <link rel="apple-touch-startup-image" href="/img/rule-logo450x300.png"/>
+        <link rel="apple-touch-startup-image" sizes="640x960" href="/img/rule-logo450x300.png"/>
+        <link rel="apple-touch-startup-image" sizes="640x1136" href="/img/rule-logo450x300.png"/>
+
+        <meta name="application-name" content="Rule World"/>
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="msapplication-TileColor" content="#9c27b0"/>
+        <meta name="msapplication-TileImage" content="/img/rule-logo120.png"/>
+        <meta name="msapplication-square70x70logo" content="tiny.png"/>
+        <meta name="msapplication-square150x150logo" content="square.png"/>
+        <meta name="msapplication-wide310x150logo" content="wide.png"/>
+        <meta name="msapplication-square310x310logo" content="large.png"/>
+        
+        <link rel="preconnect" href="//rule.world">
+        <link rel="preconnect" href="//rule.world" crossorigin>
+        
+        <link rel="canonical" href="https://rule.world/" />
+        <link rel="amphtml" href="https://rule.world/" />
     </head>
     <body>
         <div id="view"></div>
