@@ -26,8 +26,8 @@ const recentsIcon = <FontIcon className="material-icons">restore</FontIcon>;
 const favoritesIcon = <FontIcon className="material-icons">favorite</FontIcon>;
 const nearbyIcon = <IconLocationOn />;
 const muiTheme = getMuiTheme({
-    accent1Color: deepOrange500,
     palette: {
+        accent1Color: deepOrange500,
         textColor: cyan500,
     },
     appBar: {
